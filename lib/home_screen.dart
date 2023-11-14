@@ -147,8 +147,15 @@ class Homescreen extends StatelessWidget {
                                   context,
                                   MaterialPageRoute(
                                     builder: (context) => DetailsScreen(
-                                        name: listFlower.arrflowers[index]
-                                            ['name']),
+                                      name: listFlower.arrflowers[index]
+                                          ['name'],
+                                      image: listFlower.arrflowers[index]
+                                          ['image'],
+                                      country: listFlower.arrflowers[index]
+                                          ['country'],
+                                      price: listFlower.arrflowers[index]
+                                          ['price'],
+                                    ),
                                   ));
                             },
                           );
